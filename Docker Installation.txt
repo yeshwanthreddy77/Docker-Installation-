@@ -1,7 +1,0 @@
-Installing Docker engine1.	Installing latest version of docker	$ wget -O - https://get.docker.com | sh2.	To Check docker version	$ docker --version3.	List all the images in docker	$ docker images4.	Search a docker image to pull	$ docker search ubuntu5.	Pull a docker image	$ docker pull ubuntu:latest  (imagename:tag)6.	Run a docker container	$ docker run -it ubuntu:14.04 bash7.	Detach from the container.	PRESS CTRL+p+q8.	See all docker containers running and stopped also.	$ docker ps -a9.	Stop a running docker container	$ docker stop CONTAINER-ID10.	Start a stopped container	$ docker start CONTAINER-ID11.	Remove a stopped container	$ docker rm CONTAINER-ID
-
-12. 	To remove Images
-	$ docker rmi ImageID
-
-13.	To remove containers 
-	$ docker rm Container_ID	
