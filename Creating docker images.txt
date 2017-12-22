@@ -1,0 +1,10 @@
+Creating docker images1.	Using docker commit
+a.	Start the docker container in bash	$ docker run -it ubuntu:14.04 bash
+b.	Make the changes in the container.	echo "hello " >> /opt/cepac.	Copy the hostname of the container which will be used later	$ hostname
+d.	Exit the container without shutting it down	Press CTRL + P + Q
+e.	Create the docker image using docker commit command	$ docker commit copied-hostname ubuntu-updated
+f.	Check your new image	$ docker images2.	Using Dockerfile
+a.	Create a file Dockerfile	$ vim Dockerfile
+b.	Add the below content in the file	FROM ubuntu:14.04	RUN echo "hello " >> /opt/cepa
+c.	Execute docker build command		$ docker build -t ubuntu-new .        (-t tag)
+d.	Check your new image	$ docker images
